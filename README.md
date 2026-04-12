@@ -1,16 +1,10 @@
 # 🤖 Sentiment Analysis of Gojek App Reviews using Naive Bayes
-# 🤖 Analisis Sentimen Ulasan Aplikasi Gojek Menggunakan Naive Bayes
-
 ## 📌 Deskripsi Project
-
 Project ini bertujuan untuk menganalisis sentimen pengguna terhadap aplikasi Gojek berdasarkan ulasan yang diberikan di Google Play Store menggunakan teknik Natural Language Processing (NLP) dan algoritma Naive Bayes.
-
 Project ini bersifat **end-to-end**, mulai dari proses pengambilan data (crawling), preprocessing, pelatihan model, evaluasi, hingga deployment dalam bentuk aplikasi web menggunakan Streamlit.
-
 ---
 
 ## 🎯 Tujuan
-
 * Mengklasifikasikan sentimen ulasan pengguna (Positif, Negatif, Netral)
 * Menerapkan teknik preprocessing teks dalam NLP
 * Membangun model machine learning menggunakan Naive Bayes
@@ -19,7 +13,6 @@ Project ini bersifat **end-to-end**, mulai dari proses pengambilan data (crawlin
 ---
 
 ## 🧠 Teknologi yang Digunakan
-
 * Python
 * Pandas & NumPy
 * Scikit-learn
@@ -32,7 +25,7 @@ Project ini bersifat **end-to-end**, mulai dari proses pengambilan data (crawlin
 
 ## 📂 Struktur Project
 
-```id="n1k2q3"
+```
 Sentiment-Analysis-Gojek-Naive-Bayes/
 │
 ├── data/
@@ -52,17 +45,13 @@ Sentiment-Analysis-Gojek-Naive-Bayes/
 ├── README.md
 └── .gitignore
 ```
-
 ---
 
 ## 🔍 Metodologi
-
 ### 1. Crawling Data
-
 Data ulasan diambil dari aplikasi Gojek di Google Play Store menggunakan Python (scraping).
 
 ### 2. Preprocessing Data
-
 * Case Folding (mengubah huruf menjadi lowercase)
 * Cleaning (menghapus simbol, angka, dll)
 * Tokenization
@@ -70,28 +59,20 @@ Data ulasan diambil dari aplikasi Gojek di Google Play Store menggunakan Python 
 * Stemming (menggunakan Sastrawi)
 
 ### 3. Labeling Data
-
 Data diklasifikasikan menjadi:
-
 * Positif
 * Negatif
-* Netral
 
 ### 4. Feature Extraction
-
 Menggunakan:
-
 * TF-IDF Vectorizer
 
 ### 5. Modeling
-
 * Algoritma: Naive Bayes (MultinomialNB)
 * Pembagian data: Train & Test
 
 ### 6. Evaluasi Model
-
 Menggunakan:
-
 * Accuracy
 * Precision
 * Recall
@@ -99,9 +80,7 @@ Menggunakan:
 
 ---
 ## 📊 Hasil Evaluasi Model
-
 Model Naive Bayes diuji menggunakan beberapa nilai smoothing parameter (alpha) untuk mendapatkan performa terbaik.
-
 ### 🔹 Perbandingan Performa Model
 
 | Alpha | Accuracy | Precision | Recall | F1-Score |
@@ -116,60 +95,49 @@ Model Naive Bayes diuji menggunakan beberapa nilai smoothing parameter (alpha) u
 
 ### 🏆 Model Terbaik
 Model dengan performa terbaik diperoleh pada:
-
 - **Alpha = 1.0**
 - Accuracy: **86.3%**
 - Precision: **90.54%**
 - Recall: **88.07%**
 - F1-Score: **89.29%**
-
 ---
 
 ### 📌 Insight
 - Nilai alpha yang lebih besar memberikan performa yang lebih stabil
 - Model menunjukkan performa yang baik dalam mengklasifikasikan sentimen positif dan negatif
 - Precision yang tinggi menunjukkan model cukup akurat dalam prediksi sentimen
-
 ---
 
 ## 💻 Aplikasi Streamlit
-
 Project ini dilengkapi dengan aplikasi web interaktif menggunakan Streamlit.
 
 ### Fitur:
-
 * Input teks ulasan
 * Prediksi sentimen secara real-time
 * Menampilkan hasil klasifikasi
 * Visualisasi data (opsional)
 
 ### Cara Menjalankan:
-
 ```bash id="runapp1"
 cd app
 streamlit run app.py
 ```
-
 ---
 
 ## ⚙️ Cara Instalasi
-
 ### 1. Clone Repository
-
 ```bash id="clone1"
 git clone https://github.com/username/nama-repo-kamu.git
 cd nama-repo-kamu
 ```
 
 ### 2. Buat Virtual Environment (Opsional)
-
 ```bash id="venv1"
 python -m venv venv
 venv\Scripts\activate
 ```
 
 ### 3. Install Dependencies
-
 ```bash id="install1"
 pip install -r requirements.txt
 ```
