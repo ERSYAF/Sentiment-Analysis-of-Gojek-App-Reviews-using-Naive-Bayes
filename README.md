@@ -1,7 +1,7 @@
 # 🤖 Sentiment Analysis of Gojek App Reviews using Naive Bayes
 ## 📌 Deskripsi Project
-Project ini bertujuan untuk menganalisis sentimen pengguna terhadap aplikasi Gojek berdasarkan ulasan yang diberikan di Google Play Store menggunakan teknik Natural Language Processing (NLP) dan algoritma Naive Bayes.
-Project ini bersifat **end-to-end**, mulai dari proses pengambilan data (crawling), preprocessing, pelatihan model, evaluasi, hingga deployment dalam bentuk aplikasi web menggunakan Streamlit.
+####Project ini bertujuan untuk menganalisis sentimen pengguna terhadap aplikasi Gojek berdasarkan ulasan yang diberikan di Google Play Store menggunakan teknik Natural Language Processing (NLP) dan algoritma Naive Bayes.
+####Project ini bersifat end-to-end, mulai dari proses pengambilan data (crawling), preprocessing, pelatihan model, evaluasi, hingga deployment dalam bentuk aplikasi web menggunakan Streamlit.
 ---
 
 ## 🎯 Tujuan
